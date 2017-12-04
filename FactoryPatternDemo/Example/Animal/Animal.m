@@ -28,4 +28,5 @@
 - (NSString *)likeEatFood
 {
     return nil;
-}@end
+}
+@end
