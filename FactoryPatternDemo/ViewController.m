@@ -15,6 +15,14 @@
 
 @implementation ViewController
 
+- (IBAction)Push:(UIBarButtonItem *)sender {
+    Class class = NSClassFromString(@"MainTableViewController");
+    UIViewController *vc = [[class alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -38,7 +46,6 @@
     [cat getFactorySubClass];
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
